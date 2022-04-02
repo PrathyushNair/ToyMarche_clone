@@ -328,3 +328,33 @@ a:hover{
 #sliderdiv{
     cursor:pointer;
 }
+/* Search bar */
+#searchfilter{
+    width:30%;
+    height:90%;
+    margin-left:38%;
+    /* border:1px solid red; */
+    text-align: center;
+}
+#inputbar{
+    width:70%;
+    height:90%;
+    padding-left:5px;
+    border:none;
+    margin-top: 1%;
+}
+#searchbutton{
+    /* border:1px solid red; */
+    width:18%;
+    height:90%;
+    background-color: transparent;
+    color:grey;
+    border:none;
+}
+/* #searchbutton::placeholder{
+    font-size:larger ;
+} */
+#searchbutton:hover{
+    width:20%;
+    height:93%;
+}
