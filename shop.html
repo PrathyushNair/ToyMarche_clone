@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <link rel="icon" type="image/x-icon" href="https://d2pyicwmjx3wii.cloudfront.net/s/5f447e14285691dcc9bfcdf2/5f8d4b8aecff0cf1fd324ab5/webp/logo_logo-240x240.png">
+    <!-- <link rel="stylesheet" href="toymarche_home.css"> -->
+    <script src="https://kit.fontawesome.com/24c494a6b6.js"
+    crossorigin="anonymous" ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="footer.css">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Chettan+2&family=Poppins:wght@400;500&family=Roboto+Slab&display=swap" rel="stylesheet">
+    <body background="https://cdn.storehippo.com/s/5f447e14285691dcc9bfcdf2/ms.files/body_bg.png">
+
+    
+<style>
+     body{
+         font-family: "Baloo Chettan 2",sans-serif;
+     }                                               
+     
+                                                       /* NAVBAR CSS starts here */
+    .navbox{
+    height:40%;
+    width:100%;
+    /* border:1px solid red; */
+    
+}
+.navbox>div:nth-child(1){
+    height:100%;
+    width:100%;
+    display:flex;
+    justify-content:space-around;
+    text-align: center;
+    /* border:1px solid black; */
+}
+.navbox>div:nth-child(1)>div{
+    /* border:1px solid black; */
+    width:15%;
+    text-align:center;
+    display:flex;
+    justify-content: space-around;
+}
+.navbox>div:nth-child(1)>div>:hover{
+    color:blue;
+}
+
+.navbox2{
+    height:50px;
+    width:100%;
+    background-color: gold;
+    display:flex;
+    justify-content:flex-start;
+    padding-left:12%;
+    gap:20px;
+    
+
+    
+}
+
+.shopcontent,.morecontent{
+  display:none;
+  background-color: #f9f9f9;
+  width:auto;
+  height:auto;
+  padding-left: 10px ;
+  padding-right: 20px;
+  z-index: 1;
+  position:absolute;
+  line-height:5px;
+}
+/* .shopcontent>p{
+    width:80%;
+    height:80%;
+    margin:auto;
+    display:flex;
+    justify-content: center;
+    line-height: 5px;
+    
+} */
+.shopcontent>p:hover,.morecontent>p:hover{
+    color:blue;
+}
+
+.shop-dropdown:hover  .shopcontent{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+}
+.more-dropdown:hover .morecontent{
+    display:grid;
+  grid-template-columns:auto;
+}
+
+#cartcount,#favcount{
+    display:inline;
+    margin-left:5px;
+    width:20px;
+    color:white;
+    border-radius:10px;
+    padding:0px 4px 0px 4px;
+    background-color: #999999;
+}
+.navbox>div>img{
+    width:15%;
+    height:80%;
+}
+select{
+   border:none;
+   background-color:transparent;
+   font-size: medium;
+   font-weight: 400;
+   width:60px;
+}
+
+
+select~div{
+    display:flex;
+    align-items: center;
+}
+                                                           /* Navbar css ends*/
+#maincontainer{
+    /* border:1px solid red; */
+    width:80%;
+    height:auto;
+    display:flex;
+    margin:auto;
+    
+}
+#one{
+    width:30%;
+    height:auto;
+    /* border:1px solid red; */
+}
+#main2{
+    width:80%;
+    height:auto;
+    /* border:1px solid red; */
+    margin-left: 20px;
+}
+#main2b{
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    margin-top:20px;
+    gap:20px;
+}
+#main2a{
+   height:auto;
+    /* border:1px solid green; */
+    margin-top:20px;
+    padding: 20px 20px 10px 20px;
+    box-sizing: border-box;
+}
+#main2a>div>img{
+   margin-top:25px;
+   width:100%;
+   height:60%;
+
+}
+input{
+    height:30px;
+    width:60px;
+    background-color: transparent;
+    text-align: center;
+    border:1px solid grey;
+}
+#go{
+    background-color:gold;
+    margin-left:-20px;
+    color:white;
+    
+}
+#agegrp>input,#tick1{
+    
+    margin-left: 10px;
+    width:15px;
+    height:15px;
+}
+.sortdropdown{
+    border:1px solid grey;
+    width:35%;
+    height:20%;
+    margin-left:65%;
+    display:flex;
+    justify-content: space-around;
+    
+}
+.sortcontent{
+  display:none;
+  background-color: #f9f9f9;
+  width:auto;
+  height:auto;
+  margin-top:45px;
+  padding-left:10px ;
+  padding-right:10px;
+  z-index: 1;
+  position:absolute;
+  line-height:5px;
+}
+.sortdropdown:hover .sortcontent{
+  display:block
+  
+}
+#readless{
+    display:none;
+}
+img{
+    height:100%;
+    width:100%;
+}
+img:hover{
+    cursor:pointer;
+    opacity:100%;
+   
+}
+.cartwishbutton{
+    overflow: hidden;
+    position:relative;
+    margin-top:-30%;
+    margin-left:20%;
+    height:40px;
+    width:60%;
+    justify-content: space-evenly;
+    display:flex;
+    opacity: 0%;
+}
+.cartwishbutton:hover{
+    opacity:100%
+}
+#imagecontainer{
+    cursor:pointer;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+a{
+ text-decoration: none;
+ color:black;
+}
+div{
+    cursor:pointer;
+}
+.bt1,.bt2{
+    border:none;
+    width:30%;
+    height:40px;
+    border-radius:10px;
+    background-color: gold;
+    font-size: large;
+}
+/* .learncontent{
+  display:none;
+  background-color: transparent;
+  width:auto;
+  height:auto;
+  margin-top:50px;
+  margin-bottom:50px;
+  padding-left:10px ;
+  padding-right:10px;
+  z-index:10;
+  position:absolute;
+  line-height:5px;
+}
+.learnwithfun:hover .learncontent{
+    display: block;
+} */
+
+
+</style>                                               
+
+</head>
+<body>    
+ <!-------------------------------------------------------------NAVBAR Code Begins---------------------------------------------------------------->
+                                                                                                               <!-- NAVBAR STarts here -->
+    <div class="navbox">
+        <div>
+            <img src="https://cdn1.storehippo.com/s/5f447e14285691dcc9bfcdf2/5fa00a8f29cc626bc128f080/webp/logo-for-website.png" />
+            <select onchange="gotoshop2()">
+            <option value="Shop">Shop</option></b>
+           <option id="selectshop" value="Shop">Shop</option>
+            <option value="Sell">Sell</option>
+            </select>
+             <div id="usersection">
+                <div><i onclick="cartpage()" class="fa-solid fa-cart-shopping fa-2x"></i><div id="cartcount" class="cartcoutup"></div></div>
+                <div><i onclick="wishpage()"class="fa-solid fa-heart fa-2x"></i><div id="favcount"class="wishcoup"></div></div>
+               
+                <div id="username"><b></b></div>   
+            </div>
+        </div>
+    </div>   
+    <div class="navbox2">
+                <div> <p onclick="gotohome()">Home</p></div>
+                <div class="shop-dropdown">
+                     <p onclick="gotoshop()">Shop<span> </span><i class="fa-solid fa-angle-down"></i></p>
+                     <div class="shopcontent">
+                        <p onclick="gotoshop()"><b>Learn with fun</b></p>
+                        <p onclick="gotoshop()">Educational Toys & games</p>
+                        <p onclick="gotoshop()">Art& Craft</p>
+                        <p onclick="gotoshop()">Building Blocks</p>
+                        <p onclick="gotoshop()">Puzzles &board games</p>
+                        <p onclick="gotoshop()"><b>Collectibles</b></p>
+                        <p onclick="gotoshop()">Characters</p>
+                        <p onclick="gotoshop()">Dolls & Doll houses</p>
+                        <p onclick="gotoshop()">Cars</p>
+                        <p onclick="gotoshop()">Action Figures</p>
+                        <p onclick="gotoshop()"><b>Active play</b></p>
+                        <p onclick="gotoshop()">Ride on toys</p>
+                        <p onclick="gotoshop()">Outdoor Playsets</p>
+                        <p onclick="gotoshop()"><b>Soft Plays</b></p>
+                        <p onclick="gotoshop()">Soft Toys</p>
+                        <p onclick="gotoshop()"><b>Baby &Pre-School</b></p>
+                        <p onclick="gotoshop()"><b>Pretend Pla</b>y</p>
+                    </div>
+                </div>
+                <div class=" more-dropdown">
+                    <p>More<span> </span><i class="fa-solid fa-angle-down"></i></p>
+                        <div class="morecontent">
+                            <a href="donate.html"><p>Donate</p></a>
+                            <a href="recycle.html"><p>Recycle</p></a>
+                            <a href="aboutus.html"><p>About us</p></a>
+                            <a href="piggy bank.html"><p>Piggy Bank</p></a>
+                            <a href="contactus.html"><p>Contact Us</p></a>
+                            <a href="shoppingguide.html"><p>Shopping guide</p></a>
+                        </div>
+                </div>
+            </div>
+            <!-- <div></div>    FOR SEARCH BAR   -->
+    </div>
+                                                             <!-- NAVBAR Ends Here   -->
+                                                               
+    <!-------------------------------------------------------------NAVBAR Code Ends---------------------------------------------------------------->
+
+    <!-------------------------------------------------------------Shop code begins here----------------------------------------------------------->
+<div id="maincontainer">
+    <div id="one">
+        <p>CATEGORIES</p>
+        <span><i class="fa-solid fa-angle-down"></i>  Shop</span>
+        <div>
+            <div class="learnwithfun" style="display:flex; justify-content: space-between;"><p><span style="padding-left: 10px;"><i class="fa-solid fa-caret-right" ></i></span> Learn with fun</p><p><button style="background-color: transparent;color:black;border:none"><i class="fa-solid fa-plus" ></i></button></p>
+                <!-- <div class="learncontent">
+                    <p>Educational games</p>
+                    <p>Art & Craft</p>
+                    <p>Building Blocks</p>
+                    <p>Books</p>
+                    <p>Puzzles and board games</p> -->
+                <!-- </div> -->
+        </div>
+            <div style="display:flex ;justify-content:space-between"><p><span style="padding-left: 10px;"><i class="fa-solid fa-caret-right"></i></span> Collectibles</p><p><button style="background-color: transparent;color:black;border:none" ><i class="fa-solid fa-plus" id="collectibles"></i></button></p></div>
+           <div style="display:flex ;justify-content:space-between"><p><span style="padding-left: 10px;"><i class="fa-solid fa-caret-right"></i></span> Active play</p><p><button style="background-color: transparent;color:black;border:none" ><i class="fa-solid fa-plus" id="activeplay"></i></button></p></div>
+            <div style="display:flex ;justify-content:space-between"><p><span style="padding-left: 10px;"><i class="fa-solid fa-caret-right"></i></span> Soft Play</p><p><button style="background-color: transparent;color:black;border:none"><i class="fa-solid fa-plus" id="softplay"></i></button></p></div>
+            <div><p><span style="padding-left: 10px;"><i class="fa-solid fa-caret-right"></i></span> Baby & Preschool</p></div>
+            <div><p><span style="padding-left: 10px;"><i class="fa-solid fa-caret-right"></i></span> Pretend School</p></div>
+        </div>
+        <div>
+            <p>PRICE</p>
+            <div style="display:flex;justify-content:space-between">
+                <div><input type="number" placeholder="From"><span>-</span><input type="number" placeholder="To"></div>
+                 <button id="go">Go</button>
+            </div>
+        </div>
+        <div id="agegrp">
+            <p>Age Group</p>
+            <input type="checkbox" id="0to2" name="vehicle1" value="Bike">0 to 2 Years<br>
+            <input type="checkbox" id="2to5" name="vehicle1" value="Bike">2 to 5 Years<br>
+            <input type="checkbox" id="5to9" name="vehicle1" value="Bike">5 to 9 Years<br>
+            <input type="checkbox" id="9years+" name="vehicle1" value="Bike">9 Years+<br>
+        </div>
+        <div>
+            <p>Brand</p>
+            <input type="checkbox" id="tick1"  value="Toys">Asmodee<br>
+            <input type="checkbox" id="tick1"  value="Toys">Barbie<br>
+            <input type="checkbox" id="tick1"  value="Toys">Bburago<br>
+            <input type="checkbox" id="tick1"  value="Toys">BecreBv<br>
+            <input type="checkbox" id="tick1"  value="Toys">Black Rock Games<br>
+            <input type="checkbox" id="tick1"  value="Toys">Bubble Magic<br>
+            <input type="checkbox" id="tick1"  value="Toys">Bunchems<br>
+            <input type="checkbox" id="tick1"  value="Toys">Buzzbee Toys<br>
+            <input type="checkbox" id="tick1"  value="Toys">CAT<br>
+            <input type="checkbox" id="tick1"  value="Toys">CHUCHU TV<br>
+            <input type="checkbox" id="tick1"  value="Toys">Cool Makers<br>
+            <input type="checkbox" id="tick1"  value="Toys">Cra-Z-Art<br>
+            <input type="checkbox" id="tick1"  value="Toys">Disney<br>
+            <input type="checkbox" id="tick1"  value="Toys">Engino<br>
+            <input type="checkbox" id="tick1"  value="Toys">Explore<br>
+            <input type="checkbox" id="tick1"  value="Toys">Finger Game<br>
+            <input type="checkbox" id="tick1"  value="Toys">Fisher-Price<br>
+            <input type="checkbox" id="tick1"  value="Toys">Fortnite<br>
+            <input type="checkbox" id="tick1"  value="Toys">Frozen<br>
+            <input type="checkbox" id="tick1"  value="Toys">Funskool<br>
+            <input type="checkbox" id="tick1"  value="Toys">Furrendz<br>
+            <input type="checkbox" id="tick1"  value="Toys">Greenligth Collectibles<br>
+            <input type="checkbox" id="tick1"  value="Toys">Grosslet & Dunlap<br>
+            <input type="checkbox" id="tick1"  value="Toys">Happe<br>
+            <input type="checkbox" id="tick1"  value="Toys">Harry Potter<br>
+            <input type="checkbox" id="tick1"  value="Toys">Hasbro<br>
+            <input type="checkbox" id="tick1"  value="Toys">Hatchimals<br>
+            <input type="checkbox" id="tick1"  value="Toys">Hilife<br>
+            <input type="checkbox" id="tick1"  value="Toys">Hot Wheels<br>
+            <input type="checkbox" id="tick1"  value="Toys">IDO3D<br>
+            <input type="checkbox" id="tick1"  value="Toys">IMC Toys<br>
+            <input type="checkbox" id="tick1"  value="Toys">Imagimake<br>
+            <input type="checkbox" id="tick1"  value="Toys">Infinity Nado<br>
+            <input type="checkbox" id="tick1"  value="Toys">JCB<br>
+            <input type="checkbox" id="tick1"  value="Toys">Jada<br>
+            <input type="checkbox" id="tick1"  value="Toys">Jurassic World<br>
+            <input type="checkbox" id="tick1"  value="Toys">Kindi Kids<br>
+            <input type="checkbox" id="tick1"  value="Toys">Kinsmart<br>
+            <input type="checkbox" id="tick1"  value="Toys">Kipa<br>
+            <input type="checkbox" id="tick1"  value="Toys">LEGO<br>
+            <input type="checkbox" id="tick1"  value="Toys">LOL Surprise<br>
+            <input type="checkbox" id="tick1"  value="Toys"> Ladybird Books<br>
+            <input type="checkbox" id="tick1"  value="Toys">Leap Frog<br>
+            <input type="checkbox" id="tick1"  value="Toys">Little Live Pets<br>
+            <input type="checkbox" id="tick1"  value="Toys">Little Tikes<br>
+            <input type="checkbox" id="tick1"  value="Toys">MEGA CONSTRUX<br>
+            <input type="checkbox" id="tick1"  value="Toys"> Maisto<br>
+            <input type="checkbox" id="tick1"  value="Toys">Majorette<br>
+            <input type="checkbox" id="tick1"  value="Toys">Matchbox<br>
+            <input type="checkbox" id="tick1"  value="Toys">Mattel<br>
+            <input type="checkbox" id="tick1"  value="Toys">Mega Bloks<br>
+            <input type="checkbox" id="tick1"  value="Toys">Melissa & Doug<br>
+            <input type="checkbox" id="tick1"  value="Toys">Mindz<br>
+            <input type="checkbox" id="tick1"  value="Toys">Mirada<br>
+            <input type="checkbox" id="tick1"  value="Toys">Monster Jam<br>
+            <input type="checkbox" id="tick1"  value="Toys">New Ray<br>
+            <input type="checkbox" id="tick1"  value="Toys">Ok Play<br>
+            <input type="checkbox" id="tick1"  value="Toys">Ooshies<br>
+            <input type="checkbox" id="tick1"  value="Toys">Orbeez<br>
+            <input type="checkbox" id="tick1"  value="Toys">Owleez<br>
+            <input type="checkbox" id="tick1"  value="Toys">PAW PATROL<br>
+            
+        </div>
+    </div>
+    <div id="main2">
+        <div id="main2a">
+            <div class="sortdropdown">
+                <p>Sort....</p>
+                <p><i class="fa-solid fa-angle-down"></i></p>
+                <div class="sortcontent">
+                    <p id="lowtohigh">Price:low to high</p>
+                    <p id="hightolow">Price:High to Low</p>
+                    <p id="ascending">Names:Ascending Order</p>
+                    <p id="descending">Names:Descending Order</p>
+                </div>
+            </div>
+                <div><img src="https://cdn.storehippo.com/s/5f447e14285691dcc9bfcdf2/ms.files/uploads/blobid1640854454973.png"></div>
+                <div id="readmore" onclick="readmore()"><p  >Read more..</p></div>
+                <p id="readless" onclick="og()">Readless..</p>
+
+        </div>
+        
+        <div id="main2b">
+    <!-------------------------------------------------------------Append grids here----------------------------------------------------------->
+   
+     
+        </div>
+    </div>
+</div>
+<div>
+        <!-- FOOTER -->
+
+<footer id="footer">
+
+    <!-- SIGNUP LOGO -->
+    <div  class="pink"></div>
+    <div id="container-6" class="Home-signup">
+        <a href="signup.html">
+            <img src="https://d2pyicwmjx3wii.cloudfront.net/s/5f447e14285691dcc9bfcdf2/61ccb7fb806c4bb52f6d8f03/webp/deals-of-the-week-2--2048x2048.png" alt="Home-signup">
+        </a>
+    </div>
+    <div class="pink2"></div>
+    
+    <!-- COMPANY LOGO -->
+    
+            <div id="container-8" class="logo">
+                <a href=""> <img src="https://d2pyicwmjx3wii.cloudfront.net/s/5f447e14285691dcc9bfcdf2/5fa00a8f29cc626bc128f080/webp/logo-for-website-480x480.png" alt="logo"> </a>
+            </div>
+            
+    <!-- PERAGRAPH -->
+    
+            <div id="container-9" class="pera">  <p>A marketplace for all your toy needs! Shop your hearts out on your favorite brands. Buy toys for babies and preschoolers from the most preferred brands such as Fisher Price, Leapfrog, Hape, Giggles, Tomy, Funskool or shop building blocks for your little ones from Lego, Engino, Mega Bloks. Looking for educational and learning toys? There are plenty of options available from brands like Shifu, Smartivity, Explore, Skillofun, Hape, Ok Play to name a few. Huge range of collectible cars, dolls, action figures for collectors from brands like Hot Wheels, Siku, Barbie, Hasbro, Mirada, Funskool, Mattel. Keep your super active little ones busy with our collection of outdoor playsets and ride-on toys. Don't forget to check out our collection of stuffed animals and soft toys, perfect gifts regardless of age. </p>
+                <p>What makes us unique is that you sell back the toys when you don't need them anymore and earn piggy bank points to shop more toys! Teach your kids to manage their digital piggy banks. Encourage them to care for others by donating toys and earn more piggy bank points. Get them to care for environment by encouraging to give broken toys for recycling and earn piggy bank points. Make them responsible!</p> 
+            </div>
+    <!-- SOCIALMEDIA HANDELS -->
+    
+            <div id="container-20" >
+            
+                <div>
+                    <a href="https://www.facebook.com/toymarche/?view_public_for=101667941917013" target="_blank"><i class="fa-brands fa-facebook fa-2x" ></i></a>
+                    <a href="https://www.instagram.com/toymarcheindia/" target="_blank"><i class="fa-brands fa-instagram fa-2x"></i></a>
+                    <a href="https://www.youtube.com/channel/UCMuGKjgzL-csAfI0_jbx0wg/featured" target="_blank"><i class="fa-brands fa-youtube fa-2x"></i></a>
+                    <a href="https://in.pinterest.com/toymarche/" target="_blank"><i class="fa-brands fa-pinterest fa-2x"></i></a>
+                </div>
+                
+            
+            </div>
+    
+    <!-- DEATILS -->
+            
+            <div id="container-21">
+            
+    <!-- CONTACT INFORMATION -->
+                <div class="bottom">
+                    <div class="yellowbar">
+                    <p class="pp">  CONTACT</p>
+                    </div>
+            
+                    <div class="small">
+                        <ol><i class="fa-solid fa-phone fa-xs hov"></i> +918010332222</ol>
+                        <ol><i class="fa-solid fa-envelope fa-xs hov"></i> toymarche@toymarche.com</ol>
+                    </div>
+                    
+                </div>
+            
+    <!-- POLICES -->
+                <div class="bottom">
+                    <div class="yellowbar">
+                    <p class="pp"> POLICIES</p>
+                   </div>
+                    
+                  <div class="small">
+                      <a href="" target=""><ol>  <i class="fa fa-angle-double-right fa-2xs"></i>Terms of Sale</ol></a>
+                      <a href="Buyback&sell.html"  target=""><ol> <i class="fa fa-angle-double-right fa-2xs"></i>Buyback & Sell Policy</ol></a>
+                      </a><a href="" target=""><ol><i class="fa fa-angle-double-right fa-2xs"></i>Returns, Cancellation & Refunds Policy</ol></a>
+                      <a href="" target=""><ol><i class="fa fa-angle-double-right fa-2xs"></i>Payment Policy</ol></a>
+                      <a href="" target=""><ol><i class="fa fa-angle-double-right fa-2xs"></i>Shipping Policy</ol></a>
+                      <a href="terms.html" target=""><ol><i class="fa fa-angle-double-right fa-2xs"></i>Terms of Use</ol></a>
+                      <a href="" target=""><ol><i class="fa fa-angle-double-right fa-2xs"></i>Privacy Policy</ol></a>
+                  </div>
+            
+                    
+                </div>
+    <!-- INFORMATION -->
+                <div class="bottom">
+                    <div class="yellowbar">
+                    <p class="pp"> INFORMATION </p>
+                    </div>
+            
+                    <div class="small">
+                        <a href="" target=""><ol><i class="fa fa-angle-double-right fa-2xs"></i>About Us</ol></a>
+                      <a href="contactus.html" target=""><ol><i class="fa fa-angle-double-right fa-2xs"></i>Contact us</ol></a>
+                      <a href="" target=""><ol><i class="fa fa-angle-double-right fa-2xs"></i>Blog</ol></a>
+                    </div>
+                    
+                </div>
+            
+    <!-- ACCOUNT -->
+                <div class="bottom">
+                    <div class="yellowbar">
+                    <p class="pp"> ACCOUNT</p>
+                    </div>
+                    <div class="small">
+                        <a href="test.html" target=""><ol><i class="fa fa-angle-double-right fa-2xs"></i>Wishlist</ol></a>
+                      <a href="contactus.html" target=""><ol><i class="fa fa-angle-double-right fa-2xs"></i>Contact us</ol></a>
+                      <a href="piggy bank.html" target=""><ol><i class="fa fa-angle-double-right fa-2xs"></i>Piggy Bank</ol></a>
+                      
+                    
+                    
+                    </div>
+                    
+                </div>
+    <!-- ADDRESS -->
+                <div class="bottom">
+                    <div class="yellowbar">
+                    <p class="pp"> ADDRESS</p>
+                    </div>
+            
+                    <div class="small">
+                        <ol><i class="fa fa-angle-double-right fa-2xs"></i>Toy Marche</ol>
+                    <ol><i class="fa fa-angle-double-right fa-2xs"></i>Registered Address: Greenwood City, Block-A, Sector-45</ol>
+                    <ol><i class="fa fa-angle-double-right fa-2xs"></i>Gurgaon</ol>
+                    <ol><i class="fa fa-angle-double-right fa-2xs"></i>Haryana 122001</ol>
+                    <ol><i class="fa fa-angle-double-right fa-2xs"></i>IN</ol>
+                    </div>
+                    
+                </div>
+                
+            
+            </div>
+    <!-- COPYRIGHT -->
+            <div id="container-22">
+                <p>Copyright©<a class="hov">Toy March</a></p>
+            </div>
+        </footer>  
+</div>    
+</body>
+</html>
+<script src="shop.js"></script>
+

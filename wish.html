@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Toy Marche: Online Toys & games Store in India| Buy Toys for kids</title>
+    <title>Wishlist</title>
     <link rel="icon" type="image/x-icon" href="https://d2pyicwmjx3wii.cloudfront.net/s/5f447e14285691dcc9bfcdf2/5f8d4b8aecff0cf1fd324ab5/webp/logo_logo-240x240.png">
     <!-- <link rel="stylesheet" href="toymarche_home.css"> -->
     <script src="https://kit.fontawesome.com/24c494a6b6.js"
@@ -15,14 +15,8 @@
     <body background="https://cdn.storehippo.com/s/5f447e14285691dcc9bfcdf2/ms.files/body_bg.png">
         <link rel="stylesheet" href="footer.css">
         <link rel="stylesheet" href="index.css">
-        <!-- For slider -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"
-        integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
-        integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <!-- For Slider -->
+        <link rel="stylesheet" href="home.css">
+        <link rel="stylesheet" href="wish.css">
 
 </head>
 <body>
@@ -35,11 +29,11 @@
            <option id="selectshop" value="Shop">Shop</option>
             <option value="Sell">Sell</option>
             </select>
-             <div >
+             <div id="usersection">
                 <div><i onclick="cartpage()" class="fa-solid fa-cart-shopping fa-2x"></i><div id="cartcount" class="cartcoutup"></div></div>
                 <div><i onclick="wishpage()" class="fa-solid fa-heart fa-2x"></i><div id="favcount"class="wishcoup"></div></div>
                
-                <div><a id="alog"href="login.html">Login</a> | <a id="alog" href="signup.html">Signup</a></div>  
+                <div id="username"><b></b></div>  
             </div>
         </div>
     </div>   
@@ -82,115 +76,69 @@
             <!-- <div></div>    FOR SEARCH BAR   -->
     </div>
                                                              <!-- NAVBAR Ends Here   -->
-<div id="sliderdiv">
-        <img onclick="gotoshop()" src="https://d2pyicwmjx3wii.cloudfront.net/s/5f447e14285691dcc9bfcdf2/62396e692116d3b59c938057/webp/home-page-banner-collection-7--2048x2048.png">
-        <img onclick="gotoshop()" src="https://d2pyicwmjx3wii.cloudfront.net/s/5f447e14285691dcc9bfcdf2/62396f0d6f1ac8b64e5c6f60/webp/home-page-banner-collection-8--2048x2048.png">
-        <img onclick="gotoshop()" src="https://d2pyicwmjx3wii.cloudfront.net/s/5f447e14285691dcc9bfcdf2/623a01fcde2eaf427daaffe0/webp/home-page-banner-collection-1--2048x2048.png">
+
+
+
+    <p></p>
+   
+  
+
+
+<!-- content start -->
+
+<div id="heading" >Wishlist</div>
+
+<!-- aorginal Cart -->
+
+   
+   
+ 
+    <main>
+    <table>
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>item</th>
+          <th>Price</th>
+          <th>add Or remove</th>
+        </tr>
+      </thead>
+      <tbody id="body"></tbody>
+    </table>
+  </main>
+
+<!-- Bottom -->
+
+<!-- Bottom -->
+
+<div id="HeadBoox"> <!--maindiv-------------------->    
+
+             
+              <!-- Continue Shopping-------------------->
+              <a href="shop.html"> <button class="end-btn">Continue Shopping</button> </a> <span><a href="cart.html"><button  class="end-btn">Go to Cart</button</a></span>
+        </div>
+
+  </div>
+
+ 
+
+ 
 </div>
-                                            <!-- DIV for everything below slider section  -->
-
-<div>
-    <div><img src="https://d2pyicwmjx3wii.cloudfront.net/s/5f447e14285691dcc9bfcdf2/622110b6a7f7fcce0e8f10d0/webp/5-2048x2048.png" ></div>
-    <div id="grid">
-            <div><img onclick="gotoshop()" src="https://d2pyicwmjx3wii.cloudfront.net/s/5f447e14285691dcc9bfcdf2/61cc5d0307445cbcf864887b/webp/1-480x480.png"></div>
-            <div><img onclick="gotoshop()"src="https://d2pyicwmjx3wii.cloudfront.net/s/5f447e14285691dcc9bfcdf2/61cc5d1323d459bc947c3a8f/webp/2-480x480.png"></div>
-            <div><img onclick="gotoshop()"src="https://d2pyicwmjx3wii.cloudfront.net/s/5f447e14285691dcc9bfcdf2/61cc5d21c225ddbc66016cdd/webp/5-480x480.png"></div>
-            <div><img onclick="gotoshop()"src="https://d2pyicwmjx3wii.cloudfront.net/s/5f447e14285691dcc9bfcdf2/61cc5d3408cd08bc14aead57/webp/4-480x480.png"></div>
-            <div><img onclick="gotoshop()"src="https://d2pyicwmjx3wii.cloudfront.net/s/5f447e14285691dcc9bfcdf2/61cc5d43c225ddbc66017070/webp/6-480x480.png"></div>
-            <div><img onclick="gotoshop()"src="https://d2pyicwmjx3wii.cloudfront.net/s/5f447e14285691dcc9bfcdf2/61cc5d4f08cd08bc14aeafe5/webp/3-480x480.png"></div>
-    </div>
-    <!-- Akash Add here -->
-    <div id="HOME">
-        <div id="youtube" class="yt" ><iframe width="1280" height="400" src="https://www.youtube.com/embed/cX0OTmWnUec" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-<!-- CHOOSE BY AGE --> 
-        <div onclick="gotoshop()" id="container-1" class="banner">
-            
-            <img src="https://d2pyicwmjx3wii.cloudfront.net/s/5f447e14285691dcc9bfcdf2/622110cad4d404ceff364aa8/webp/6-2048x2048.png" alt="ChooseBy Age">
-
-    </div>
-
-    <div class="Box-b">
-        <div>
-            <a href="shop.html" target="_blank">
-                <img class="age" src="https://d2pyicwmjx3wii.cloudfront.net/s/5f447e14285691dcc9bfcdf2/61cc63e7f87b4d2de56533fd/webp/1-480x480.png" alt="age0-2">
-            </a>
-        </div>
-
-        <div>
-            <a href="shop.html" target="_blank">
-                <img class="age" src="https://d2pyicwmjx3wii.cloudfront.net/s/5f447e14285691dcc9bfcdf2/61cc63f9e5694a26b943d4e7/webp/3-480x480.png" alt="age2-5">
-            </a>
-        </div>
-
-        <div>
-            <a href="shop.html" target="_blank">
-                <img class="age" src="https://d2pyicwmjx3wii.cloudfront.net/s/5f447e14285691dcc9bfcdf2/61cc640ae5694a26b943d721/webp/2-480x480.png" alt="age5-9">
-            </a>
-        </div>
-
-        <div>
-            <a href="shop.html" target="_blank">
-                <img class="age" src="https://d2pyicwmjx3wii.cloudfront.net/s/5f447e14285691dcc9bfcdf2/61cc641ae8e51c2d6a7f5d5a/webp/4-480x480.png" alt="age9">
-            </a>
-        </div>
-    </div>           
-        
-<!-- DEALS OF THE WEEKS -->
-            <div id="container-2" class="banner">
-
-                <img src="https://d2pyicwmjx3wii.cloudfront.net/s/5f447e14285691dcc9bfcdf2/622110d9a7f7fcce0e8f156f/webp/7-2048x2048.png" alt="Deals OF The Week">
-            </div>
-            
-            <div onclick="gotoshop()" id="container-Dow"></div>
-
-            <div class="pink4"></div>
-
-<!-- BRANDS YOU LOVE -->
-
-            <div id="container-3" class="banner">
-
-                <img src="https://d2pyicwmjx3wii.cloudfront.net/s/5f447e14285691dcc9bfcdf2/622110f9e9cb1ace8ddd7a62/webp/8-2048x2048.png" alt="Brands YOU'R LOVING">
-        
-            </div>
-            <div id="b-love">
-                <a  href="shop.html" ;target="_blank"><img class="Box-c" src="https://d2pyicwmjx3wii.cloudfront.net/s/5f447e14285691dcc9bfcdf2/5fa67021d7011c59bfe2cf24/webp/fiscer-price-480x480.png" alt=""></a>
-                <a href="shop.html" target="_blank"><img class="Box-c" src="https://d2pyicwmjx3wii.cloudfront.net/s/5f447e14285691dcc9bfcdf2/5fde53b5f16a0eca6972eeda/webp/5ea7ea8fa5c0d0000415bc2e-480x480.png" alt=""></a>
-                <a  href="shop.html" target="_blank"><img class="Box-c" src="https://d2pyicwmjx3wii.cloudfront.net/s/5f447e14285691dcc9bfcdf2/5fc0d608eb7f4fe795b5e4cd/webp/download-1--480x480.png" alt=""></a> 
-                <a  href="shop.html" target="_blank"><img class="Box-c" src="https://d2pyicwmjx3wii.cloudfront.net/s/5f447e14285691dcc9bfcdf2/621e6283c7e937069d5c389f/webp/matchbox-480x480.png" alt=""></a> 
-                <a  href="shop.html" target="_blank"><img class="Box-c" src="https://d2pyicwmjx3wii.cloudfront.net/s/5f447e14285691dcc9bfcdf2/5f9856dfc7f6c3ed5518b865/webp/tomy_logo-480x480.png" alt=""></a> 
-                <a href="shop.html" target="_blank"><img class="Box-c" src="https://d2pyicwmjx3wii.cloudfront.net/s/5f447e14285691dcc9bfcdf2/5f83586bb0312e1433e34df5/webp/hotwheels2-480x480.jpg" alt=""></a> 
-            </div>
-        
 
 
 
 
-<!-- NEW ARRIVALS START HERE -->
-            <div id="container-3" class="banner">
-                <img src="https://d2pyicwmjx3wii.cloudfront.net/s/5f447e14285691dcc9bfcdf2/62211107a7f7fcce0e8f1b24/webp/9-2048x2048.png" alt="New Arivals">
-            </div>
-
-            <div onclick="gotoshop()" id="container-New"></div>
-
-          
+<!--  -->
 
 
-
-<!-- New ARRIVals Ends HERE -->
+<!-- content end -->
 
 
 <!-- FOOTER -->
 
 <footer id="footer">
 
-    <!-- SIGNUP LOGO -->
-    <div  class="pink"></div>
-    <div id="container-6" class="Home-signup">
-        <a href="signup.html">
-            <img src="https://d2pyicwmjx3wii.cloudfront.net/s/5f447e14285691dcc9bfcdf2/61ccb7fb806c4bb52f6d8f03/webp/deals-of-the-week-2--2048x2048.png" alt="Home-signup">
-        </a>
-    </div>
-    <div class="pink2"></div>
+    <div class="pink3"></div>
     
     <!-- COMPANY LOGO -->
     
@@ -242,11 +190,11 @@
                     
                   <div class="small">
                       <a href="" target=""><ol>  <i class="fa fa-angle-double-right fa-2xs"></i>Terms of Sale</ol></a>
-                      <a href="Buyback&sell.html"  target=""><ol> <i class="fa fa-angle-double-right fa-2xs"></i>Buyback & Sell Policy</ol></a>
+                      <a href=""  target=""><ol> <i class="fa fa-angle-double-right fa-2xs"></i>Buyback & Sell Policy</ol></a>
                       </a><a href="" target=""><ol><i class="fa fa-angle-double-right fa-2xs"></i>Returns, Cancellation & Refunds Policy</ol></a>
                       <a href="" target=""><ol><i class="fa fa-angle-double-right fa-2xs"></i>Payment Policy</ol></a>
                       <a href="" target=""><ol><i class="fa fa-angle-double-right fa-2xs"></i>Shipping Policy</ol></a>
-                      <a href="terms.html" target=""><ol><i class="fa fa-angle-double-right fa-2xs"></i>Terms of Use</ol></a>
+                      <a href="" target=""><ol><i class="fa fa-angle-double-right fa-2xs"></i>Terms of Use</ol></a>
                       <a href="" target=""><ol><i class="fa fa-angle-double-right fa-2xs"></i>Privacy Policy</ol></a>
                   </div>
             
@@ -260,7 +208,7 @@
             
                     <div class="small">
                         <a href="" target=""><ol><i class="fa fa-angle-double-right fa-2xs"></i>About Us</ol></a>
-                      <a href="contactus.html" target=""><ol><i class="fa fa-angle-double-right fa-2xs"></i>Contact us</ol></a>
+                      <a href="" target=""><ol><i class="fa fa-angle-double-right fa-2xs"></i>Blog</ol></a>
                       <a href="" target=""><ol><i class="fa fa-angle-double-right fa-2xs"></i>Blog</ol></a>
                     </div>
                     
@@ -273,8 +221,8 @@
                     </div>
                     <div class="small">
                         <a href="test.html" target=""><ol><i class="fa fa-angle-double-right fa-2xs"></i>Wishlist</ol></a>
-                      <a href="contactus.html" target=""><ol><i class="fa fa-angle-double-right fa-2xs"></i>Contact us</ol></a>
-                      <a href="piggy bank.html" target=""><ol><i class="fa fa-angle-double-right fa-2xs"></i>Piggy Bank</ol></a>
+                      <a href="" target=""><ol><i class="fa fa-angle-double-right fa-2xs"></i>Contact us</ol></a>
+                      <a href="" target=""><ol><i class="fa fa-angle-double-right fa-2xs"></i>Piggy Bank</ol></a>
                       
                     
                     
@@ -304,20 +252,15 @@
                 <p>Copyright©<a class="hov">Toy March</a></p>
             </div>
         </footer>
-        <!-- For Slider -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
-            integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
-            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <script type="text/javascript">
-            $('#sliderdiv').slick({
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                autoplay: true,
-                autoplaySpeed: 2000,
-            });
-        </script>
-         <!-- For Slider -->
-</body>
+    
+    
+
+
+  </body>
 </html>
-<script src="index.js"></script>
+
+<script src="wish.js"></script>
+
+
+
+    

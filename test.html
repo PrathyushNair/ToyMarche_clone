@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <style>
+      #sliderdiv{
+          overflow: hidden;
+          width:100%;
+          height:30%;
+          margin:auto;
+
+      }
+      #sliderdiv figure{
+          position: relative;
+          width:1000%;
+          margin:0;
+          left:0;
+          animation: 10s slider infinite
+      }
+      @keyframes slider {
+          0% {
+              left:0;
+          }
+          25%{
+              left:0;
+          }
+          25%{
+              left:-200%;
+          }
+          50%{
+              left:-300%;
+          }
+          50%{
+                left:-400%
+          }
+          75%{
+                left:-400%
+          }
+      }
+
+    </style>
+</head>
+<body>
+    
+    <div id="sliderdiv">
+        <figure>
+            <img onclick="gotoshop()" src="https://d2pyicwmjx3wii.cloudfront.net/s/5f447e14285691dcc9bfcdf2/62396e692116d3b59c938057/webp/home-page-banner-collection-7--2048x2048.png">
+            <img onclick="gotoshop()" src="https://d2pyicwmjx3wii.cloudfront.net/s/5f447e14285691dcc9bfcdf2/623a01fcde2eaf427daaffe0/webp/home-page-banner-collection-1--2048x2048.png"/>
+            <img onclick="gotoshop()" src="https://d2pyicwmjx3wii.cloudfront.net/s/5f447e14285691dcc9bfcdf2/62396f0d6f1ac8b64e5c6f60/webp/home-page-banner-collection-8--2048x2048.png"/>
+            <img onclick="gotoshop()" src="https://d2pyicwmjx3wii.cloudfront.net/s/5f447e14285691dcc9bfcdf2/62396e692116d3b59c938057/webp/home-page-banner-collection-7--2048x2048.png">
+        </figure>
+        
+    </div>
+</body>
+</html>

@@ -1,0 +1,280 @@
+body{
+    font-family: "Baloo Chettan 2",sans-serif;
+    /* min-width:100%;
+    min-width:100%; */
+}
+
+.navbox{
+    height:40%;
+    width:100%;
+    /* border:1px solid red; */
+    
+}
+.navbox>div:nth-child(1){
+    height:100%;
+    width:100%;
+    display:flex;
+    justify-content:space-around;
+    text-align: center;
+    /* border:1px solid black; */
+}
+.navbox>div:nth-child(1)>div{
+    /* border:1px solid black; */
+    width:15%;
+    text-align:center;
+    display:flex;
+    justify-content: space-around;
+}
+.navbox>div:nth-child(1)>div>:hover{
+    color:blue;
+}
+
+.navbox2{
+    height:50px;
+    width:100%;
+    background-color: gold;
+    display:flex;
+    justify-content:flex-start;
+    padding-left:12%;
+    gap:20px; 
+}
+
+.shopcontent,.morecontent{
+  display:none;
+  background-color: #f9f9f9;
+  width:auto;
+  height:auto;
+  padding-left: 10px ;
+  padding-right: 20px;
+  z-index: 1;
+  position:absolute;
+  line-height:5px;
+}
+/* .shopcontent>p{
+    width:80%;
+    height:80%;
+    margin:auto;
+    display:flex;
+    justify-content: center;
+    line-height: 5px;
+    
+} */
+.shopcontent>p:hover,.morecontent>p:hover{
+    color:blue;
+}
+
+.shop-dropdown:hover  .shopcontent{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+}
+.more-dropdown:hover .morecontent{
+    display:grid;
+  grid-template-columns:auto;
+}
+
+#cartcount,#favcount{
+    display:inline;
+    margin-left:5px;
+    width:20px;
+    color:white;
+    border-radius:10px;
+    padding:0px 4px 0px 4px;
+    background-color: #999999;
+}
+.navbox>div>img{
+    width:15%;
+    height:80%;
+}
+select{
+   border:none;
+   background-color:transparent;
+   font-size: medium;
+   font-weight: 400;
+   width:60px;
+}
+
+
+select~div{
+    display:flex;
+    align-items: center;
+}
+
+ table,
+td,
+th {
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+table {
+  border-collapse: collapse;
+  width: 70%;
+  margin: auto;
+  margin-top: 50px;
+}
+
+th,
+td {
+  padding: 15px;
+}
+
+tr > th {
+  background-color: #f1f1f1;
+  color: black;
+}
+
+#para{
+    height:500px;
+    width:75%;
+    /* margin:auto; */
+    margin-left: 170px;
+    margin-right:170px;
+}
+
+/* FOOTER------------------------------------> */
+
+body{
+    font-family: "Baloo Chettan 2",sans-serif;
+}
+
+   /* PERAGRAPH */
+   .pera{
+    margin-top: 400px;   
+    margin: auto;
+    justify-content: center;
+     width: 75%;
+     font-size: 13px;
+    color: #1327BE;
+    font-family: "Baloo Chettan 2",sans-serif;
+    text-align: center;
+   }
+    /* PINK VERTICAL LINE */
+    .pink{
+        border: 0.05px solid rgba(253, 195, 189, 0.959);
+        margin: auto;
+        margin-top: 50px;
+        width: 70%;
+    }.pink2{
+        border: 0.05px solid rgba(253, 195, 189, 0.959);
+        margin: auto;
+        margin-top: 0px;
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .pink3{
+        border: 0.05px solid rgba(253, 195, 189, 0.959);
+        margin: auto;
+        margin-top: 50px;
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    /* HOME SIGNUP TOY */
+    .Home-signup{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    
+    /* LOGO */
+    }.logo{
+        margin: auto;
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+    }.logo img{
+        height: 90px;
+        width: 250px;
+    }
+    /* SOCIAL-MEDIA */
+    #container-20 a {
+        color: #1327BE;
+    }#container-20 > div{
+        width: 13%;
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(auto);
+        margin: auto;
+        justify-content: space-evenly;
+        padding: 25px 0px 35px 0px;
+       
+        
+    }
+
+    /* DEATILS */
+
+    #container-21{
+        width: 78%;
+        display: grid;
+        grid-template-columns: repeat(5,1fr);
+        grid-template-rows: auto;
+        margin: auto;
+        color: #1327BE;
+        font-family: "Baloo Chettan 2",sans-serif;
+    
+        gap : 30px ;
+    }#container-21 p{
+        margin: auto;
+        margin-left: 2xs;
+    }
+    .bottom{
+        margin: auto;
+        display: flex;
+        margin-top: 0px;
+        width: 90%;
+
+    }
+
+    .yellowbar{
+        height: 20px;
+        width: 4px;
+        position: relative;
+        background: #f3cf2c;
+    
+    
+    }
+
+    .pp{
+        margin: auto;
+        margin-right: 1000px;
+        padding-left: 8px;
+    
+    }.small{
+        font-size: 13px;
+        color: #1327BE;
+        font-family: "Baloo Chettan 2",sans-serif;
+        margin: auto;
+        margin-top: 20px;
+        margin-left: -3px;
+    }.small >ol{
+        margin: auto;
+        margin-left: -40px;
+        margin-top: 10px;
+    }.small a >ol{
+        margin-left: -42px;
+        line-height: 10px;
+        color: #1327BE;
+    }.fa-angle-double-right{
+        margin: auto;
+        padding-right: 5px;
+    }
+
+/*HOVER  */
+    a>ol:hover{
+        color: #f3cf2c;
+        cursor:pointer
+    }.hov:hover{
+        color: #f3cf2c;
+        cursor:pointer
+    } 
+
+/* COPPY WRITE */
+    #container-22{
+        margin: auto;
+        display: flex;
+        margin-left: 190px;
+        font-size: 15px;
+        color: #1327BE;
+        font-family: "Baloo Chettan 2",sans-serif;
+    }

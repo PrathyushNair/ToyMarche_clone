@@ -1,0 +1,147 @@
+.container{
+    width:80%;
+    height:600px;
+    
+    margin:auto;
+    display:flex;
+    justify-content: space-around;
+
+}
+.prodimage{
+    width:40%;
+    height:100%;
+    padding-top: 5%;
+   
+    
+}
+.proddescription{
+    width:40%;
+    height:100%;
+    padding-top:3%;
+    padding-left:2%;
+    box-sizing: border-box;
+}
+.offer{
+    height:auto;
+    width:auto;
+    padding:5px 5px 5px 5px;
+    border:none;
+}
+s{
+    color:blue;
+    font-size: 20px;
+}
+input{
+    height:30px;
+    width:60px;
+    border:none;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;;
+    background-color: white;
+    text-align: center;
+}
+.cartbuywish{
+    height:50px;
+    width:60%;
+    display:flex;
+  
+    margin-top:15px;
+    justify-content:space-between;
+}
+.cart{
+    height:100%;
+    width:40%;
+    color:white;
+    background-color: gold;
+    font-size: large;
+    border:none;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;;
+}
+.buy{
+    height:100%;
+    width:40%;
+    color:white;
+    background-color: gold;
+    font-size: large;
+    border:none;
+    /* box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;; */
+}
+.wish{
+    height:100%;
+    width:15%;
+    color:white;
+    background-color: gold;
+    font-size: large;
+    border:none;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;;
+}
+.divi4{
+    height:40px;
+    width:auto;
+    background-color: gold;
+    display:flex;
+}
+.blank{
+    width:70%;
+    height:30%;
+    background-color: white;
+    margin:auto;
+    margin-top:10%;
+    margin-bottom:-3%;
+}
+.balnk2{
+    width:70%;
+    height:30%;
+    background-color: white;
+    margin:auto;
+    margin-top:10%;
+    margin-bottom:3%;
+}
+.table{
+    font-size: 15px;
+}
+#review{
+    width:70%;
+    margin:auto;
+   
+    
+   
+}
+.star1:hover,.star2:hover,.star3:hover,.star4:hover,.star5:hover{
+    display:flex;
+    color:#ffcc00;
+
+}
+#stars{
+    display:flex;
+    justify-content: space-between;
+}
+#reviewinput::placeholder{
+    text-align:left;
+    
+    font-size: medium;
+}
+#reviewinput{
+    height:100px;
+    width:80%;
+    border-radius: 10px;
+}
+#rprod{
+    width:70%;
+    height:auto;
+    margin:auto;
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    
+    margin-top:3%;
+}
+#postreview{
+    margin-left: 20%;
+    margin-top:2%;
+    background-color: gold;
+    color:white;
+    border:none;
+    font-size: medium;
+    padding:5px 5px 5px 5px;
+    border-radius: 5px;
+
+}

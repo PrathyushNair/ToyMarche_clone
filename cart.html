@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart</title>
+
+    <script src="https://kit.fontawesome.com/24c494a6b6.js"crossorigin="anonymous" ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Chettan+2&family=Poppins:wght@400;500&family=Roboto+Slab&display=swap" rel="stylesheet">
+    <body background="https://cdn.storehippo.com/s/5f447e14285691dcc9bfcdf2/ms.files/body_bg.png">
+
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="cart.css">
+
+
+     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+  </head>
+  <body>
+
+                                                         <!-- NAVBAR STarts here -->
+                                                         <div class="navbox">
+                                                            <div>
+                                                                <img src="https://cdn1.storehippo.com/s/5f447e14285691dcc9bfcdf2/5fa00a8f29cc626bc128f080/webp/logo-for-website.png" />
+                                                                <select onchange="gotoshop2()">
+                                                                <option value="Shop">Shop</option></b>
+                                                               <option id="selectshop" value="Shop">Shop</option>
+                                                                <option value="Sell">Sell</option>
+                                                                </select>
+                                                                 <div id="usersection">
+                                                                    <div><i onclick="cartpage()" class="fa-solid fa-cart-shopping fa-2x"></i><div id="cartcount" class="cartcoutup"></div></div>
+                                                                    <div><i onclick="wishpage()"class="fa-solid fa-heart fa-2x"></i><div id="favcount"class="wishcoup"></div></div>
+                                                                   
+                                                                    <div id="username"><b></b></div>  
+                                                                </div>
+                                                            </div>
+                                                        </div>   
+                                                        <div class="navbox2">
+                                                                    <div> <p onclick="gotohome()">Home</p></div>
+                                                                    <div class="shop-dropdown">
+                                                                         <p onclick="gotoshop()">Shop<span> </span><i class="fa-solid fa-angle-down"></i></p>
+                                                                         <div class="shopcontent">
+                                                                            <p onclick="gotoshop()"><b>Learn with fun</b></p>
+                                                                            <p onclick="gotoshop()">Educational Toys & games</p>
+                                                                            <p onclick="gotoshop()">Art& Craft</p>
+                                                                            <p onclick="gotoshop()">Building Blocks</p>
+                                                                            <p onclick="gotoshop()">Puzzles &board games</p>
+                                                                            <p onclick="gotoshop()"><b>Collectibles</b></p>
+                                                                            <p onclick="gotoshop()">Characters</p>
+                                                                            <p onclick="gotoshop()">Dolls & Doll houses</p>
+                                                                            <p onclick="gotoshop()">Cars</p>
+                                                                            <p onclick="gotoshop()">Action Figures</p>
+                                                                            <p onclick="gotoshop()"><b>Active play</b></p>
+                                                                            <p onclick="gotoshop()">Ride on toys</p>
+                                                                            <p onclick="gotoshop()">Outdoor Playsets</p>
+                                                                            <p onclick="gotoshop()"><b>Soft Plays</b></p>
+                                                                            <p onclick="gotoshop()">Soft Toys</p>
+                                                                            <p onclick="gotoshop()"><b>Baby &Pre-School</b></p>
+                                                                            <p onclick="gotoshop()"><b>Pretend Pla</b>y</p>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class=" more-dropdown">
+                                                                        <p>More<span> </span><i class="fa-solid fa-angle-down"></i></p>
+                                                                            <div class="morecontent">
+                                                                                <a href="donate.html"><p>Donate</p></a>
+                                                                                <a href="recycle.html"><p>Recycle</p></a>
+                                                                                <a href="aboutus.html"><p>About us</p></a>
+                                                                                <a href="piggy bank.html"><p>Piggy Bank</p></a>
+                                                                                <a href="contactus.html"><p>Contact Us</p></a>
+                                                                                <a href="shoppingguide.html"><p>Shopping guide</p></a>
+                                                                            </div>
+                                                                    </div>
+                                                                </div>
+                                                                <!-- <div></div>    FOR SEARCH BAR   -->
+                                                        </div>
+                                                                                                                 <!-- NAVBAR Ends Here   -->
+
+
+
+    <p></p>
+   
+  
+
+
+<!-- content start -->
+
+<div id="heading" >CART SUMMARY</div>
+
+<!-- aorginal Cart -->
+
+   
+    </div>
+ 
+    <main>
+    <table>
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>item</th>
+          <th>Qty</th>
+          <th>Price</th>
+          <th>item total</th>
+        </tr>
+      </thead>
+      <tbody id="body"></tbody>
+    </table>
+  </main>
+
+<!-- Bottom -->
+
+<!-- Bottom -->
+
+<div id="HeadBoox"> <!--maindiv-------------------->
+       
+ 
+
+  <div id="Leftdiv" >  <!-- Coupon -------------------->
+       
+     <div id="LeftItems">   <!-- Left items-------------------->
+           
+       <h2 >Have Discount Coupon?</h2>
+       <form action="" id="form"><input id="Couponbox" type="text" placeholder="Apply Coupon Code"  type="submit"  /><span><input id="couponbtn" type="submit" value="APPLY!" placeholder="APPlY COUPON HERE" onclick="valid() ;"></span></form>
+       
+       <h3>*Free Shipping over all orders above Rs.999 *
+           *Cash on delivery available for all orders below Rs.5000 *</h3>
+       </div>
+          
+
+     </div>
+
+  
+
+  <div id="Rightdiv">  <!-- price-------------------->
+          
+        <div id="rightPrice">   <!-- total & sub total-------------------->
+          
+          <div class="pink98"></div>
+         <div id="updiv">
+           
+           <p id="SubTotal">Sub Total: <span class="rupee₹₹">₹ <h5 class="priceshow"></h5></span></p> <br>
+            
+         </div>
+         <div class="pink99"></div>
+           <div id="dowdiv">
+             <p id="Totalinhand" >Total:  <span class="rupee₹₹">₹ <h5 class="priceshow2"></h5></span></p> <br>
+           </div>
+
+        </div>
+
+        <div id="placeShop">     <!-- Continue shoping & place order -------------------->
+             
+              <!-- Continue Shopping-------------------->
+              <a href="shop.html"> <button class="end-btn">Continue Shopping</button> </a> <span><a href="order.html"><button onclick="placeorder()" class="end-btn">Place Order</button></a></span>
+
+        </div>
+
+  </div>
+
+</div> 
+
+ 
+</div>
+
+
+
+
+<!--  -->
+
+
+<!-- content end -->
+
+
+<!-- FOOTER -->
+
+<footer id="footer">
+
+    <div class="pink3"></div>
+    
+    <!-- COMPANY LOGO -->
+    
+            <div id="container-8" class="logo">
+                <a href=""> <img src="https://d2pyicwmjx3wii.cloudfront.net/s/5f447e14285691dcc9bfcdf2/5fa00a8f29cc626bc128f080/webp/logo-for-website-480x480.png" alt="logo"> </a>
+            </div>
+            
+    <!-- PERAGRAPH -->
+    
+            <div id="container-9" class="pera">  <p>A marketplace for all your toy needs! Shop your hearts out on your favorite brands. Buy toys for babies and preschoolers from the most preferred brands such as Fisher Price, Leapfrog, Hape, Giggles, Tomy, Funskool or shop building blocks for your little ones from Lego, Engino, Mega Bloks. Looking for educational and learning toys? There are plenty of options available from brands like Shifu, Smartivity, Explore, Skillofun, Hape, Ok Play to name a few. Huge range of collectible cars, dolls, action figures for collectors from brands like Hot Wheels, Siku, Barbie, Hasbro, Mirada, Funskool, Mattel. Keep your super active little ones busy with our collection of outdoor playsets and ride-on toys. Don't forget to check out our collection of stuffed animals and soft toys, perfect gifts regardless of age. </p>
+                <p>What makes us unique is that you sell back the toys when you don't need them anymore and earn piggy bank points to shop more toys! Teach your kids to manage their digital piggy banks. Encourage them to care for others by donating toys and earn more piggy bank points. Get them to care for environment by encouraging to give broken toys for recycling and earn piggy bank points. Make them responsible!</p> 
+            </div>
+    <!-- SOCIALMEDIA HANDELS -->
+    
+            <div id="container-20" >
+            
+                <div>
+                    <a href="https://www.facebook.com/toymarche/?view_public_for=101667941917013" target="_blank"><i class="fa-brands fa-facebook fa-2x" ></i></a>
+                    <a href="https://www.instagram.com/toymarcheindia/" target="_blank"><i class="fa-brands fa-instagram fa-2x"></i></a>
+                    <a href="https://www.youtube.com/channel/UCMuGKjgzL-csAfI0_jbx0wg/featured" target="_blank"><i class="fa-brands fa-youtube fa-2x"></i></a>
+                    <a href="https://in.pinterest.com/toymarche/" target="_blank"><i class="fa-brands fa-pinterest fa-2x"></i></a>
+                </div>
+                
+            
+            </div>
+    
+    <!-- DEATILS -->
+            
+            <div id="container-21">
+            
+    <!-- CONTACT INFORMATION -->
+                <div class="bottom">
+                    <div class="yellowbar">
+                    <p class="pp">  CONTACT</p>
+                    </div>
+            
+                    <div class="small">
+                        <ol><i class="fa-solid fa-phone fa-xs hov"></i> +918010332222</ol>
+                        <ol><i class="fa-solid fa-envelope fa-xs hov"></i> toymarche@toymarche.com</ol>
+                    </div>
+                    
+                </div>
+            
+    <!-- POLICES -->
+                <div class="bottom">
+                    <div class="yellowbar">
+                    <p class="pp"> POLICIES</p>
+                   </div>
+                    
+                  <div class="small">
+                      <a href="" target=""><ol>  <i class="fa fa-angle-double-right fa-2xs"></i>Terms of Sale</ol></a>
+                      <a href=""  target=""><ol> <i class="fa fa-angle-double-right fa-2xs"></i>Buyback & Sell Policy</ol></a>
+                      </a><a href="" target=""><ol><i class="fa fa-angle-double-right fa-2xs"></i>Returns, Cancellation & Refunds Policy</ol></a>
+                      <a href="" target=""><ol><i class="fa fa-angle-double-right fa-2xs"></i>Payment Policy</ol></a>
+                      <a href="" target=""><ol><i class="fa fa-angle-double-right fa-2xs"></i>Shipping Policy</ol></a>
+                      <a href="" target=""><ol><i class="fa fa-angle-double-right fa-2xs"></i>Terms of Use</ol></a>
+                      <a href="" target=""><ol><i class="fa fa-angle-double-right fa-2xs"></i>Privacy Policy</ol></a>
+                  </div>
+            
+                    
+                </div>
+    <!-- INFORMATION -->
+                <div class="bottom">
+                    <div class="yellowbar">
+                    <p class="pp"> INFORMATION </p>
+                    </div>
+            
+                    <div class="small">
+                        <a href="" target=""><ol><i class="fa fa-angle-double-right fa-2xs"></i>About Us</ol></a>
+                      <a href="" target=""><ol><i class="fa fa-angle-double-right fa-2xs"></i>Blog</ol></a>
+                      <a href="" target=""><ol><i class="fa fa-angle-double-right fa-2xs"></i>Blog</ol></a>
+                    </div>
+                    
+                </div>
+            
+    <!-- ACCOUNT -->
+                <div class="bottom">
+                    <div class="yellowbar">
+                    <p class="pp"> ACCOUNT</p>
+                    </div>
+                    <div class="small">
+                        <a href="test.html" target=""><ol><i class="fa fa-angle-double-right fa-2xs"></i>Wishlist</ol></a>
+                      <a href="" target=""><ol><i class="fa fa-angle-double-right fa-2xs"></i>Contact us</ol></a>
+                      <a href="" target=""><ol><i class="fa fa-angle-double-right fa-2xs"></i>Piggy Bank</ol></a>
+                      
+                    
+                    
+                    </div>
+                    
+                </div>
+    <!-- ADDRESS -->
+                <div class="bottom">
+                    <div class="yellowbar">
+                    <p class="pp"> ADDRESS</p>
+                    </div>
+            
+                    <div class="small">
+                        <ol><i class="fa fa-angle-double-right fa-2xs"></i>Toy Marche</ol>
+                    <ol><i class="fa fa-angle-double-right fa-2xs"></i>Registered Address: Greenwood City, Block-A, Sector-45</ol>
+                    <ol><i class="fa fa-angle-double-right fa-2xs"></i>Gurgaon</ol>
+                    <ol><i class="fa fa-angle-double-right fa-2xs"></i>Haryana 122001</ol>
+                    <ol><i class="fa fa-angle-double-right fa-2xs"></i>IN</ol>
+                    </div>
+                    
+                </div>
+                
+            
+            </div>
+    <!-- COPYRIGHT -->
+            <div id="container-22">
+                <p>Copyright©<a class="hov">Toy March</a></p>
+            </div>
+        </footer>
+    
+    
+
+
+  </body>
+</html>
+
+<script src="cart.js"></script>
+
+
+
+    
+

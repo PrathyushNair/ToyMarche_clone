@@ -1,0 +1,240 @@
+/* heading */
+#heading{
+    margin: auto;
+    width: 70%;
+    text-align: start;
+    font-size: 45px;
+    margin-bottom: -50px;
+}
+
+/* coupon-----------------------> */
+
+#HeadBoox{
+  margin-top: 50px;
+  
+  width: 35%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  justify-content: right;
+  margin-top: 50px;
+}#Leftdiv{
+  text-align: start;
+}#Couponbox{
+width: 40%;
+height: 25px;
+background-color: white;
+text-align: center;
+border: 1px solid #ddd;
+}#couponbtn{
+  height: 30px;
+color: white;
+background-color: #ffd51e;
+border: 1px solid #ddd;
+}#LeftItems h2{
+ font-weight: 500;
+ margin-bottom: 7px;
+}#LeftItems h3{
+  font-weight: 400;
+  width: 65%;
+  margin-bottom: -15px;
+ }
+#updiv{
+  display: flex;
+  justify-content: right;
+  padding: 5px;
+}#dowdiv{
+  display: flex;
+  justify-content: right;
+}
+
+#placeShop{
+  display: flex;
+  justify-content: right;
+  gap: 20px;
+
+}.rupee₹₹{
+  font-size: 20px;
+
+}.priceshow{
+  font-size: 18px;
+}.priceshow2{
+  font-size: 18px;
+}
+/* bottom section ends here --------------> */
+
+.end-btn{
+    background-color: #ffd51e;
+    color: whitesmoke;
+    border: 0px;
+    padding: 20px 30px 20px 30px;
+    font-size: 20px;
+    font-weight: 600;
+
+}#coupon{
+    background-color: #ffcc00;
+    color: whitesmoke;
+    border: 0px;
+    padding: 10px 20px 10px 20px;
+
+
+}#conitem{
+  display: flex;
+  margin: auto;
+  justify-content: space-evenly;
+  margin-top: 20px;
+ 
+}
+
+#Fimg{
+    display: flex;
+    height:80px;
+    width: 20%;
+
+    padding: 3px;
+    margin: auto;
+    margin-left: 10px;
+    box-sizing: border-box;
+    
+    
+    
+}#itemname{
+  margin: auto;
+padding-left: 20px;
+margin-left: -80px;
+margin-top: 5px;
+font-weight: 900;
+box-sizing: border-box;
+
+}
+
+#Remove-1{
+    background-color: transparent;
+    border: 0px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}table tr:nth-child(even) {
+    background-color: transparent;
+  }
+  table tr:nth-child(odd) {
+    background-color: #ffffff;
+  }
+  table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: rgb(216, 215, 215);
+    color: black;
+    
+  }
+
+
+
+  /* CArt----------------------------------------> */
+
+table,
+td,
+th {
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+table {
+  border-collapse: collapse;
+  width: 70%;
+  margin: auto;
+  margin-top: 50px;
+}
+
+th,
+td {
+  padding: 15px;
+}
+
+tr > th {
+  background-color: #f1f1f1;
+  color: black;
+}
+
+
+/* displayMe---------------------------------------> */
+
+.displayMe{
+  border: 1px solid rgb(224, 223, 223);
+  height: 20px;
+  width: 20px;
+  text-align: center;
+
+}
+
+#qtydiv{
+  display: flex;
+  margin: auto;
+  padding: 3px;
+  box-sizing: border-box;
+  gap: 5px;
+  display: flex;
+  justify-content: center;
+  
+
+}#minscount , #pluscount{
+  border: transparent;
+  background-color: transparent;
+  height: 15px;
+  margin-top: 0px;
+  font-size: 20px;
+}.cartwish{
+  background-color: transparent;
+  border: 0px;
+  margin: auto;
+  display: flex;
+    justify-content: center;
+  margin-top: 10px;
+}.pink6{
+  border: 0.05px solid rgb(224, 223, 223);
+  margin: auto;
+  margin-top: 5px;
+  width: 50%;
+  margin-bottom: 10px;
+}
+#gross{
+  text-align: center;
+  font-size: 20px;
+}
+#net{
+ text-align: center;
+  font-size: 20px;
+}
+
+/* line */
+.pink99{
+  border: 0.05px solid rgb(224, 223, 223);
+  margin: auto;
+  margin-top: 50px;
+  width: 20%;
+  margin: auto;
+  margin-bottom: 0px;
+  margin-right: 0px;
+  margin-bottom: -10px;
+  margin-top: -30px;
+
+}.pink98{
+  border: 0.05px solid rgb(224, 223, 223);
+  margin: auto;
+  margin-top: 50px;
+  width: 30%;
+  margin: auto;
+  margin-bottom: 0px;
+  margin-right: 0px;
+  margin-bottom: -10px;
+  margin-top: 10px;
+}
+/* hover efect   courcerpointer  ------------------------> */
+
+#Fimg , #itemname ,#miscount ,#pluscount ,.cartwish , #Remove-1, .end-btn , #couponbtn{
+  cursor: pointer;
+}
+ #itemname:hover ,#miscount:hover ,#pluscount:hover ,.cartwish:hover , #Remove-1:hover{
+  color: #007aff;
+}

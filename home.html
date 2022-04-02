@@ -15,14 +15,15 @@
     <body background="https://cdn.storehippo.com/s/5f447e14285691dcc9bfcdf2/ms.files/body_bg.png">
         <link rel="stylesheet" href="footer.css">
         <link rel="stylesheet" href="index.css">
-        <!-- For slider -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"
-        integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
-        integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <!-- For Slider -->
+        <link rel="stylesheet" href="home.css">
+     <!-- For slider -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"
+     integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
+     crossorigin="anonymous" referrerpolicy="no-referrer" />
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+     integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+     crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <!-- For Slider -->
 
 </head>
 <body>
@@ -35,11 +36,11 @@
            <option id="selectshop" value="Shop">Shop</option>
             <option value="Sell">Sell</option>
             </select>
-             <div >
+             <div id="usersection">
                 <div><i onclick="cartpage()" class="fa-solid fa-cart-shopping fa-2x"></i><div id="cartcount" class="cartcoutup"></div></div>
-                <div><i onclick="wishpage()" class="fa-solid fa-heart fa-2x"></i><div id="favcount"class="wishcoup"></div></div>
+                <div><i onclick="wishpage()"class="fa-solid fa-heart fa-2x"></i><div id="favcount"class="wishcoup"></div></div>
                
-                <div><a id="alog"href="login.html">Login</a> | <a id="alog" href="signup.html">Signup</a></div>  
+                <div id="username"><b></b></div>  
             </div>
         </div>
     </div>   
@@ -171,6 +172,7 @@
             </div>
 
             <div onclick="gotoshop()" id="container-New"></div>
+            
 
           
 
@@ -241,9 +243,9 @@
                    </div>
                     
                   <div class="small">
-                      <a href="" target=""><ol>  <i class="fa fa-angle-double-right fa-2xs"></i>Terms of Sale</ol></a>
+                      <a href="terms.html" target=""><ol>  <i class="fa fa-angle-double-right fa-2xs"></i>Terms of Sale</ol></a>
                       <a href="Buyback&sell.html"  target=""><ol> <i class="fa fa-angle-double-right fa-2xs"></i>Buyback & Sell Policy</ol></a>
-                      </a><a href="" target=""><ol><i class="fa fa-angle-double-right fa-2xs"></i>Returns, Cancellation & Refunds Policy</ol></a>
+                      </a><a href="returnpolicy.html" target=""><ol><i class="fa fa-angle-double-right fa-2xs"></i>Returns, Cancellation & Refunds Policy</ol></a>
                       <a href="" target=""><ol><i class="fa fa-angle-double-right fa-2xs"></i>Payment Policy</ol></a>
                       <a href="" target=""><ol><i class="fa fa-angle-double-right fa-2xs"></i>Shipping Policy</ol></a>
                       <a href="terms.html" target=""><ol><i class="fa fa-angle-double-right fa-2xs"></i>Terms of Use</ol></a>
@@ -320,4 +322,4 @@
          <!-- For Slider -->
 </body>
 </html>
-<script src="index.js"></script>
+<script src="home.js"></script>

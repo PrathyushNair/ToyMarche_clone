@@ -1,0 +1,68 @@
+#miantopbox{
+    width: 70%;
+    margin: auto
+    }
+    #container{
+      width:40%;
+      background-color: white;
+      margin:auto;
+      line-height: 10px;
+     
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    
+     text-align: center;
+      margin-bottom: 20px;
+       border: #e4bf1a 1px solid;
+       /* margin-right: -200Px; */
+       
+    }
+    #heading {
+      width:100%;
+    
+      padding: 0px;
+    }
+    a{
+      text-decoration: none;
+      color:black;
+    }
+    input{
+      width:90%;
+      height:30px;
+      padding-left:8px
+      
+    }
+    #call{
+      color:grey;
+      font-size:12px;
+    }
+    
+    #submit{
+      width:30%;
+      height:45px;
+      border:0px;
+      background-color:#ffd51e;
+      color:white;
+      font-size: 17px;
+    }
+    #submit:hover{
+      background-color:#e4bf1a;
+    }#topimg{
+      margin: auto;
+      width: 30%;
+      height: 30%;
+      display: flex;
+      justify-content: center;
+      margin-bottom: 30px;
+    }#cancel{
+      width:15%;
+      height:30px;
+      border:0px;
+      background-color:#f8003f;
+      color:white;
+      font-size: 10px;
+    }#callbig{
+      font-size: 20px;
+      font-weight: 500;
+    }#cancel:hover{
+      background-color: #c70535;
+    }

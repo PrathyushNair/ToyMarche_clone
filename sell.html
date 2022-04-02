@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toy Marche: Online Toys & games Store in India| Buy Toys for kids</title>
+    <link rel="icon" type="image/x-icon" href="https://d2pyicwmjx3wii.cloudfront.net/s/5f447e14285691dcc9bfcdf2/5f8d4b8aecff0cf1fd324ab5/webp/logo_logo-240x240.png">
+    <!-- <link rel="stylesheet" href="toymarche_home.css"> -->
+    <script src="https://kit.fontawesome.com/24c494a6b6.js"
+    crossorigin="anonymous" ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Chettan+2&family=Poppins:wght@400;500&family=Roboto+Slab&display=swap" rel="stylesheet">
+    <body background="https://cdn.storehippo.com/s/5f447e14285691dcc9bfcdf2/ms.files/body_bg.png">
+        <link rel="stylesheet" href="footer.css">
+        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="home.css">
+<style>
+    #sell{
+          height:800px;
+          width:80%;
+          margin:auto;
+          color:gold;
+          font-size:80px;
+          text-align: center;
+    }
+</style>
+
+</head>
+<body>
+                                                         <!-- NAVBAR STarts here -->
+    <div class="navbox">
+        <div>
+            <img src="https://cdn1.storehippo.com/s/5f447e14285691dcc9bfcdf2/5fa00a8f29cc626bc128f080/webp/logo-for-website.png" />
+            <select onchange="gotoshop2()">
+            <option value="Shop">Shop</option></b>
+           <option id="selectshop" value="Shop">Shop</option>
+            <option value="Sell">Sell</option>
+            </select>
+             <div id="usersection">
+                <div><i onclick="cartpage()" class="fa-solid fa-cart-shopping fa-2x"></i><div id="cartcount" class="cartcoutup">0</div></div>
+                <div><i onclick="wishpage()" class="fa-solid fa-heart fa-2x"></i><div id="favcount"class="wishcoup">0</div></div>
+               
+                <div id="username"><b></b></div>  
+            </div>
+        </div>
+    </div>   
+    <div class="navbox2">
+                <div> <p onclick="gotohome()">Home</p></div>
+                <div class="shop-dropdown">
+                     <p onclick="gotoshop()">Shop<span> </span><i class="fa-solid fa-angle-down"></i></p>
+                     <div onclick="wishpage()" class="shopcontent">
+                        <p onclick="gotoshop()"><b>Learn with fun</b></p>
+                        <p onclick="gotoshop()">Educational Toys & games</p>
+                        <p onclick="gotoshop()">Art& Craft</p>
+                        <p onclick="gotoshop()">Building Blocks</p>
+                        <p onclick="gotoshop()">Puzzles &board games</p>
+                        <p onclick="gotoshop()"><b>Collectibles</b></p>
+                        <p onclick="gotoshop()">Characters</p>
+                        <p onclick="gotoshop()">Dolls & Doll houses</p>
+                        <p onclick="gotoshop()">Cars</p>
+                        <p onclick="gotoshop()">Action Figures</p>
+                        <p onclick="gotoshop()"><b>Active play</b></p>
+                        <p onclick="gotoshop()">Ride on toys</p>
+                        <p onclick="gotoshop()">Outdoor Playsets</p>
+                        <p onclick="gotoshop()"><b>Soft Plays</b></p>
+                        <p onclick="gotoshop()">Soft Toys</p>
+                        <p onclick="gotoshop()"><b>Baby &Pre-School</b></p>
+                        <p onclick="gotoshop()"><b>Pretend Pla</b>y</p>
+                    </div>
+                </div>
+                <div class=" more-dropdown">
+                    <p>More<span> </span><i class="fa-solid fa-angle-down"></i></p>
+                        <div class="morecontent">
+                            <a href="donate.html"><p>Donate</p></a>
+                            <a href="recycle.html"><p>Recycle</p></a>
+                            <a href="aboutus.html"><p>About us</p></a>
+                            <a href="piggy bank.html"><p>Piggy Bank</p></a>
+                            <a href="contactus.html"><p>Contact Us</p></a>
+                            <a href="shoppingguide.html"><p>Shopping guide</p></a>
+                        </div>
+                </div>
+            </div>
+            <!-- <div></div>    FOR SEARCH BAR   -->
+    </div>
+                                                             <!-- NAVBAR Ends Here   -->
+<div id="sell">
+<p>😍Will be updating soon!!!!😍</p>
+<p>Please return to home page</p>
+</div>
+
+</body>
+</html>
+<script>
+      function gotohome(){
+        window.location.href="home.html"
+    }
+    function gotoshop(){
+        window.location.href="shop.html"
+    }
+    function gotoshop2(){
+            select=document.querySelector("select").value
+            if(select=="Shop"){
+                window.location.href="shop.html"
+            }
+            else if(select=="Sell"){
+                window.location.href="sell.html"
+            }
+        }
+        username=document.querySelector("#username")
+        userarr=JSON.parse(localStorage.getItem("user"))
+        username.innerText="Hi!"+" "+userarr[0].name
+        var cartData = JSON.parse(localStorage.getItem("cart"))||[];
+  console.log(cartData);
+  // wish
+  var NewArriv = JSON.parse(localStorage.getItem("wish")) || [];  //wish
+  console.log(NewArriv) ;
+//   Calculation---------------------------------------------------------------------------------->
+var total = cartData.reduce(function (sum, elem, index, arr) {
+    return sum + Number(elem.price2);
+  }, 0);
+  var length = cartData.length;
+  console.log(length);
+  var length2 =NewArriv.length
+  console.log(total);
+//  Display Calculation---------------------------------------------------------------------------------->
+  var cartcoutup= document.querySelector(".cartcoutup").innerText = ` ${length}`
+  var cartcoutup= document.querySelector(".wishcoup").innerText = ` ${length2}`
+  function gotoshop2(){
+            select=document.querySelector("select").value
+            if(select=="Shop"){
+                window.location.href="shop.html"
+            }
+            else if(select=="Sell"){
+                window.location.href="sell.html"
+            }
+        }
+function cartpage(){
+    console.log("in cart")
+    window.location.href="cart.html"
+}
+username=document.querySelector("#username")
+        userarr=JSON.parse(localStorage.getItem("user"))
+        username.innerText="Hi!"+" "+userarr[0].name
+
+function addtocart(el){
+console.log("hello")
+var cartData = JSON.parse(localStorage.getItem("cart"))||[];
+cartData.push(el)
+localStorage.setItem("cart",JSON.stringify(cartData))
+alert("Item added to cart")
+window.location.reload()  
+}
+function addtowish(el){
+console.log("hello")
+var NewArriv = JSON.parse(localStorage.getItem("wish")) || []; 
+NewArriv.push(el)
+localStorage.setItem("wish",JSON.stringify(NewArriv))
+alert("Product added Sucessfully Into The Wishlist 💛")
+window.location.reload()  
+}
+function wishpage(){
+    window.location.href="wish.html"
+}
+function cartpage(){
+    console.log("in cart")
+    window.location.href="cart.html"
+}
+</script>
