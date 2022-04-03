@@ -212,18 +212,17 @@ Blog link : https://medium.com/@info.coldfired/project-toy-marche-clone-9a66fee3
 Linkedin: https://www.linkedin.com/in/akash-mondal-859b4b228/
 Contribution:
 
- • Created Content functions Category of the Products and features such as hidden add to cart button & wishlist button which is visible when someone hovers over the product.
+  • Created Content functions Category of the Products and features such as hidden add to cart button & wishlist button which is visible when someone hovers over the product.
  
- • Footer for all pages with some effects and by clicking any items to route their respective linked pages
+  • Footer for all pages with some effects and by clicking any items to route their respective linked pages
  
- • Add to WishList with functions such as add to cart the product, delete the product, item summary display go to the home page, and go to cart page from the wishlist page.
+  • Add to WishList with functions such as add to cart the product, delete the product, item summary display go to the home page, and go to cart page from the wishlist page.
  
- • Address input taking page for user preferred location for delivery.
+  • Address input taking page for user preferred location for delivery.
  
- • Payment page with features such as having the valid OTP otherwise it will show an alert & with valid OTP, if Otp is correct it will place an order with a confirmation alert and redirect to the homepage.
+  • Payment page with features such as having the valid OTP otherwise it will show an alert & with valid OTP, if Otp is correct it will place an order with a confirmation alert and redirect to the homepage.
  
- • Most Importantly assessment of team members' daily schedule tasks,
- daily morning and evening scrum for dividing the task, taking daily assessment reports jointly contributing with team members @PrathyushNair and @DevAshishSaurabh, and arranging team meetings to rectify bugs and fix the bugs.
+  • Most Importantly assessment of team members' daily schedule tasks, daily morning and evening scrum for dividing the task, taking daily assessment reports jointly contributing with team members @PrathyushNair and @DevAshishSaurabh, and arranging team meetings to rectify bugs and fix the bugs.
  
  
 ⁍ Prathyush Nair:
